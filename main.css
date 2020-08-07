@@ -1,25 +1,80 @@
-/* General */
+/* Nav (Mobile) */
 
-main {
-    
+header {
+    background-color: #000;
+    /* Adds 40 pixels of space under the header
+    so the main content isn't so close
+    to the navigation */
+    margin-bottom: 40px; 
 }
 
-header, footer {
-    background-color: lightgrey;
-    height: 175px;
-    text-align: center; 
-    /*Need to figure out how to drop the h2 in the center*/
+header h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* Removes the default margin/spacing around
+    the h1 element */
+    margin: 0;
+    /* Pushes the text down 20 pixels from
+    the top of the page */ 
+    padding-top: 20px; 
+    border: 1px red solid; 
+}
+
+header nav {
+    display: flex; /* The default is block and we change to flex */
+    justify-content: center; /* Can use this without display being flex*/
+    color: #fff; 
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px red solid; 
+}
+
+header nav ul {
+    display: flex; /* The default is block and we change to flex */
+
+    /* We want the nav to display in a single-row - this is 
+     the default for `display: flex` so we don't need to define its `flex-direction`, in this case */
+
+    padding-left: 0; /* This removes the default padding to the left of the unordered list. */
+    list-style: none; /* Removes the bullet points from the list items within the unordered list */
+    border: 1px red solid; 
+}
+
+header nav ul li a {
+    color: #fff; 
+    text-decoration: none; /* Removes the underline to the link */
+    margin: 0 20px 0 0; /* Applies 20 pixels of margin to the right of each link creating a visual gap between the navigation links */
+    border: 1px red solid; 
+}
+
+header nav ul li:last-child a {
+    margin-right: 0; /* Removes the margin to the right of the last anchor tag so that the nav appears centered. */
+}
+
+
+/* General (Mobile) */
+
+footer {
+    color: #fff;
+    background-color: #000;
+    text-align: center;
 }
 
 img {
     width: 100%;
 }
 
-/* Groups & Items */
+
+.black {
+    /* Sets section background color to black*/
+    background-color: #000;
+}
+
+/* Groups & Items  (Mobile First) */
 
 .group {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     margin: 20px;
 }
 
@@ -27,13 +82,70 @@ img {
     flex: 1; 
     margin: 20px; 
     font-size: 24px;
+    border: 1px red solid; 
 }
 
-/* Groups & Items (Desktop) */
+.item h2 {
+    display: flex;
+    justify-content: center;
+}
 
-@media all and (min-width: 800px) {
-    .group {
-        flex-direction: row;
+.group-black {
+    display: flex; 
+    flex-direction: column; 
+    color: #fff; 
+    margin: 20px;
+    padding: 20px 0px; 
+}
+
+
+/* Nav (Media Query: Desktop) */
+
+@media all and (min-width: 600px) {
+
+    header {
+        /* Change the default setting from block to flex */
+        display: flex;
+        /* Push the items (the title and nav) to the far sides of the 
+           browser with space between them. */
+        justify-content: space-between;
+        /* Add 0 pixels padding top & bottom and 30 pixels left & 
+           right. */ 
+        padding: 0 30px;  
+    }
+
+    header h1 {
+        /* Sets 14 pixels of margin above & below the h1 and set 
+        0 pixels to the left & right */
+        margin: 14px 0;
+        /* Remove or set 0 pixels of padding above the h1. */ 
+        padding-top: 0px; 
+    }
+
+    header nav {
+        /* Push down the navigation container 8 pixels to make it present
+        a little better visually within the space. */
+        margin-top: 8px; 
+    }
+
+     /* Users cannot hover on mobile devices, so that is why we 
+     implement this behavior only for larger screens */
+    header nav ul li a:hover {
+    /* Targets the change when a user hovers over the anchor tag 
+       (link) within the list items within the unordered list that 
+       is within the nav that is within the header. */
+    color: #bdbdbd;
+    }
+
+    .group, .group-black {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .item {
+        flex: 1; 
+        align-items: center; 
+
     }
 
 }
