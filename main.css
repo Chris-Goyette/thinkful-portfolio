@@ -58,6 +58,10 @@ h2, h3 {
     font-family: "Lucida Console", Monaco, monospace;
 }
 
+.projects {
+    border: 2px red solid; 
+}
+
 .projects h2 {
     padding-left: 20px;
 }
@@ -66,6 +70,7 @@ footer {
     color: #fff;
     background-color: #000;
     text-align: center;
+    margin: 0px; 
 }
 
 img {
@@ -111,6 +116,45 @@ img {
     padding: 20px 0px; 
 }
 
+.contact {
+    background-color: #000;
+    padding-top: 20px; 
+    margin-bottom: 0px; 
+}
+
+.contact h3 {
+    color: #fff; 
+    padding-left: 20px; 
+    margin: 0; 
+}
+
+.contact p {
+    color: #fff;
+    padding-left: 20px; 
+}
+
+.contact nav {
+    display: flex; 
+    justify-content: center; 
+}
+
+.contact nav ul {
+    display: flex; 
+    padding-left: 0px; 
+    list-style: none; 
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px 0 0;  
+}
+
+.contact li:last-child a {
+    margin-right: 0px; 
+}
+
+
 
 /* Nav (Media Query: Desktop) */
 
@@ -148,6 +192,10 @@ img {
        (link) within the list items within the unordered list that 
        is within the nav that is within the header. */
     color: #bdbdbd;
+    }
+
+    .contact nav ul li a:hover {
+        color: #bdbdbd;
     }
 
     .group, .group-black {
