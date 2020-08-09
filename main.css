@@ -18,7 +18,6 @@ header h1 {
     /* Pushes the text down 20 pixels from
     the top of the page */ 
     padding-top: 20px; 
-    border: 1px red solid; 
 }
 
 header nav {
@@ -26,7 +25,6 @@ header nav {
     justify-content: center; /* Can use this without display being flex*/
     color: #fff; 
     font-family: "Lucida Console", Monaco, monospace;
-    border: 1px red solid; 
 }
 
 header nav ul {
@@ -37,14 +35,12 @@ header nav ul {
 
     padding-left: 0; /* This removes the default padding to the left of the unordered list. */
     list-style: none; /* Removes the bullet points from the list items within the unordered list */
-    border: 1px red solid; 
 }
 
 header nav ul li a {
     color: #fff; 
     text-decoration: none; /* Removes the underline to the link */
     margin: 0 20px 0 0; /* Applies 20 pixels of margin to the right of each link creating a visual gap between the navigation links */
-    border: 1px red solid; 
 }
 
 header nav ul li:last-child a {
@@ -56,10 +52,6 @@ header nav ul li:last-child a {
 
 h2, h3 {
     font-family: "Lucida Console", Monaco, monospace;
-}
-
-.projects {
-    border: 2px red solid; 
 }
 
 .projects h2 {
@@ -83,7 +75,7 @@ img {
     background-color: #000;
 }
 
-/* Groups & Items  (Mobile First) */
+/* Groups & Items  (Mobile) */
 
 .group {
     display: flex;
@@ -91,16 +83,11 @@ img {
     margin: 20px;
 }
 
-.group-2 {
-    border: 2px red solid; 
-}
-
 .item {
     flex: 1; 
     margin: 10px 0; 
     padding: 20px; 
-    font-size: 24px;
-    border: 1px red solid; 
+    font-size: 24px; 
 }
 
 .item h2 {
@@ -156,10 +143,14 @@ img {
 
 
 
-/* Nav (Media Query: Desktop) */
+/* Media Query: Desktop */
 
 @media all and (min-width: 600px) {
 
+    section {
+        padding: 0 10%; 
+    }
+    
     header {
         /* Change the default setting from block to flex */
         display: flex;
@@ -192,6 +183,11 @@ img {
        (link) within the list items within the unordered list that 
        is within the nav that is within the header. */
     color: #bdbdbd;
+    }
+
+    .contact p , .contact h3 {
+        display: flex; 
+        justify-content: center;
     }
 
     .contact nav ul li a:hover {
