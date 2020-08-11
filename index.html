@@ -10,18 +10,20 @@
 </head>
 
 <body>
+    
+    <header>
+        <h1>Chris Goyette</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <header>
-            <h1>Chris Goyette</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
             <!-- Introduction -->
         <section>
             <div class="group">
@@ -100,7 +102,7 @@
         </section>
 
 
-        <!-- Contact -->
+        <!-- Social Media Links -->
         <section class="contact">
             <h3>Contact</h3>
                 <p>I'd love to hear from you! Please feel free to contact or follow me!</p>
@@ -114,8 +116,33 @@
                 </nav>
         </section>
 
+        <!-- Contact Form -->
+        <section>
+            <div class="group">
+                <div class="item">
+                    <form action="https://formspree.io/mgenqkyo" method="POST">
+                        <label for="user-name">Name:</label>
+                        <input id="user-name" type="text" name="name">
+
+                        <label for="user-email">Email:</label>
+                        <input id="user-email" type="text" name="email">
+
+                        <label for="user-message">Message:</label>
+                        <textarea id="user-message" name="message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="item item-my-contact">                    
+                    <p>Phone #: <a href="tel:650-489-2942">650-489-2942</a></p>
+                    <p>Email: <a href="mailto:securethebeans1">securethebeans1@gmail.com</a></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101144.60416468578!2d-122.4823673158521!3d37.60759810037728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e0!4m0!4m0!5e0!3m2!1sen!2sus!4v1597105841385!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+                </div>
+        </div>
+
+        </section>
+
         <footer>
-            <p>&copy; Chris Goyette</p>
+            <p>&copy; Chris Goyette 2020</p>
         </footer>
 
         <!-- script element -->
