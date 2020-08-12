@@ -50,7 +50,7 @@ header nav ul li:last-child a {
 
 /* General (Mobile) */
 
-h2, h3 {
+h1, h2, h3 {
     font-family: "Lucida Console", Monaco, monospace;
 }
 
@@ -77,6 +77,10 @@ img {
 
 .black {
     background-color: #000;
+}
+
+.black li {
+    margin-bottom: 20px;
 }
 
 main  a:link { color: #000; }
@@ -125,7 +129,7 @@ a:hover { text-decoration: underline;}
     margin-bottom: 0px; 
 }
 
-.contact h3 {
+.contact h2 {
     color: #fff; 
     padding-left: 20px; 
     margin: 0; 
@@ -138,7 +142,7 @@ a:hover { text-decoration: underline;}
 
 .contact nav {
     display: flex; 
-    justify-content: center; 
+    justify-content: center;  
 }
 
 .contact nav ul {
@@ -157,21 +161,24 @@ a:hover { text-decoration: underline;}
     margin-right: 0px; 
 }
 
-/* Contat Form Design */
+
+/* Contact Form Design */
 
 form {
-    margin: 20px;  
+    margin: 10px;  
     font-family: "Lucida Console", Monaco, monospace;
 }
 
 form label {
     display: block; 
+    color: #fff;
 }
 
 form input, 
 form textarea {
     width: 100%; 
     margin-bottom: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 form textarea {
@@ -226,7 +233,7 @@ form button {
     color: #bdbdbd;
     }
 
-    .contact p , .contact h3 {
+    .contact p , .contact h2 {
         display: flex; 
         justify-content: center;
     }
@@ -240,9 +247,12 @@ form button {
         flex-direction: row; 
     }
 
-    .item {
-        flex: 1; 
-        align-items: center; 
+    .item-my-contact p {
+        display: block; 
+        padding-left: 0px; 
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 18px; 
     }
+
 
 }

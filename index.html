@@ -46,6 +46,8 @@
         <!-- About Me -->
         <section class="black">
             <div class="group-black">
+
+                <!--Need to figure out how to stretch my About content across the entire container...-->
                 <div class="item">
                     <h2>About Me</h2>
                     <p>Getting laid off during the novel Covid-19 pandemic has been a real wake up call to me. 
@@ -53,15 +55,22 @@
                     <p>My professional background is in credit underwriting and fraud analysis. 
                         As much as I enjoyed my profession, I realized that I needed to learn more technical skills 
                         if I want to stay competitive in the workforce.</p>
-                    <p>I have always been fascinated with technology and all the things you can create with it. 
-                        The reason why I chose to pursue web development and software engineering is because 
-                        I want to be able to create and build those things myself. I feel that I have a lot to 
+                    <p>I have always been fascinated with technology. 
+                        The reason why I chose to pursue software development is because I feel like I have a lot to 
                         contribute to the world and I want to do my part.</p>
                 </div>
             
                 <div class="item">
+                    <h3>Web Services I Plan to Offer:</h3>
+                    <ul>
+                        <li>A completely customized website for your resume or portfolio</li>
+                        <li>A customized sales page for your product or service</li>
+                        <li>Coding reviews and edits for your website</li>
+                        <li>Consulting/mentoring services</li>
+                    </ul>
                     <img src="images/supreme-chris.jpg" alt="Chris Goyette wearing supreme beanie with glasses">
                 </div>
+
             </div>
         </section>
 
@@ -104,8 +113,7 @@
 
         <!-- Social Media Links -->
         <section class="contact">
-            <h3>Contact</h3>
-                <p>I'd love to hear from you! Please feel free to contact or follow me!</p>
+            <h2>Contact</h2>
                 <nav>
                     <ul>
                         <li><a href="https://www.linkedin.com/in/chrisgoyette/" target="_blank">LinkedIn</a></li>
@@ -114,31 +122,27 @@
                         <li><a href="https://www.instagram.com/kicks_by_goyette/" target="_blank">Instagram</a></li>
                     </ul>
                 </nav>
-        </section>
-
-        <!-- Contact Form -->
-        <section>
+            <!-- Contact Form -->
             <div class="group">
                 <div class="item">
                     <form action="https://formspree.io/mgenqkyo" method="POST">
                         <label for="user-name">Name:</label>
-                        <input id="user-name" type="text" name="name">
+                        <input id="user-name" type="text" name="name" required>
 
                         <label for="user-email">Email:</label>
-                        <input id="user-email" type="text" name="email">
+                        <input id="user-email" type="text" name="email" required>
 
                         <label for="user-message">Message:</label>
-                        <textarea id="user-message" name="message"></textarea>
+                        <textarea id="user-message" name="message" maxlength="200" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div class="item item-my-contact">                    
                     <p>Phone #: <a href="tel:650-489-2942">650-489-2942</a></p>
                     <p>Email: <a href="mailto:contact@christophergoyette.com">contact@christophergoyette.com</a></p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101144.60416468578!2d-122.4823673158521!3d37.60759810037728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e0!4m0!4m0!5e0!3m2!1sen!2sus!4v1597105841385!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101144.60416468578!2d-122.4823673158521!3d37.60759810037728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e0!4m0!4m0!5e0!3m2!1sen!2sus!4v1597105841385!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
                 </div>
             </div>
-
         </section>
 
         <footer>
